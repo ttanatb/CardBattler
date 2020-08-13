@@ -22,6 +22,8 @@ public class Pile
 
     public int Count { get { return cards_.Count; } }
 
+    public Card[] Cards { get { return cards_.ToArray(); } }
+
     public Card[] Draw(int count)
     {
         Card[] drawnCards = null;
