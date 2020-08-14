@@ -12,9 +12,13 @@ namespace UI
 
         List<Card> model_;
 
-        private void Start()
+        private void Awake()
         {
             model_ = new List<Card>();
+        }
+
+        private void Start()
+        {
             UpdateView();
         }
 

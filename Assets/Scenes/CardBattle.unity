@@ -434,7 +434,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d7379a093fcd384cbfde96c707fc1e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  handController_: {fileID: 0}
+  handController_: {fileID: 948393315}
+  deckController_: {fileID: 801580430}
+  discardPileController_: {fileID: 1845872250}
 --- !u!1 &613975197
 GameObject:
   m_ObjectHideFlags: 0
@@ -510,6 +512,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 801580428}
+  - component: {fileID: 801580430}
+  - component: {fileID: 801580429}
   m_Layer: 5
   m_Name: DeckUI
   m_TagString: Untagged
@@ -537,6 +541,32 @@ RectTransform:
   m_AnchoredPosition: {x: 20, y: 20}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &801580429
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 801580427}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10a184cfe26f1eb4796e4fc8447eddfa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cardCountText_: {fileID: 1747597197}
+--- !u!114 &801580430
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 801580427}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fca21208c164203479365e688e1366cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  view_: {fileID: 801580429}
 --- !u!1 &948393313
 GameObject:
   m_ObjectHideFlags: 0
@@ -927,6 +957,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1845872248}
+  - component: {fileID: 1845872250}
+  - component: {fileID: 1845872249}
   m_Layer: 5
   m_Name: DiscardUI
   m_TagString: Untagged
@@ -954,3 +986,29 @@ RectTransform:
   m_AnchoredPosition: {x: -20, y: 20}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 1, y: 0}
+--- !u!114 &1845872249
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1845872247}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10a184cfe26f1eb4796e4fc8447eddfa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cardCountText_: {fileID: 315398957}
+--- !u!114 &1845872250
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1845872247}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fca21208c164203479365e688e1366cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  view_: {fileID: 1845872249}
